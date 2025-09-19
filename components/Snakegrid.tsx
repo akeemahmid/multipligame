@@ -221,7 +221,7 @@ const Snakegrid = () => {
 
       {/* Mobile On-Screen Controls */}
       {!gameOver && (
-        <div className="fixed bottom-5 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 md:hidden">
+        <div className="fixed bottom-5 left-1/2 -translate-x-1/2 mt-[5%] flex flex-col items-center gap-2 md:hidden">
           <button
             className="w-16 h-16 rounded-full bg-[#a66cff] text-white font-bold"
             onClick={() => direction !== "DOWN" && setDirection("UP")}
