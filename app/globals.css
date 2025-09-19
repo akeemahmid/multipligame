@@ -1,0 +1,30 @@
+@import "tailwindcss";
+/* @import "tw-animate-css"; */
+
+/* @custom-variant dark (&:is(.dark *)); */
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+
+}
+
+:root {
+  --radius: 0.625rem;
+  --background: #040507;
+  --foreground: #FFFFFFB2;
+
+}
+
+.dark {
+  --background: #040507;
+  --foreground: #FFFFFFB2;
+
+}
+
+@layer base {
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
