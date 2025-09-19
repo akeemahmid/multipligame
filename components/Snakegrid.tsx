@@ -180,7 +180,7 @@ const Snakegrid = () => {
                     Game Over
                   </div>
                   <h1 className="text-lg font-bold text-green-600">
-                    Score : {(foodChangeCount - 1) * 5} points
+                    Score : {(foodChangeCount - 1) * 2} points
                   </h1>
                 </div>
 
