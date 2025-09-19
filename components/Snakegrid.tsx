@@ -77,7 +77,7 @@ const Snakegrid = () => {
 
   // Interval movement
   useEffect(() => {
-    const interval = setInterval(moveSnake, 70);
+    const interval = setInterval(moveSnake, 90);
     return () => clearInterval(interval);
   }, [snake, direction]);
 
