@@ -89,8 +89,10 @@ const Snakegrid = () => {
   const handlekey = (event: KeyboardEvent<HTMLDivElement>) => {
     if (event.key === "ArrowUp" && direction !== "DOWN") setDirection("UP");
     if (event.key === "ArrowDown" && direction !== "UP") setDirection("DOWN");
-    if (event.key === "ArrowLeft" && direction !== "RIGHT") setDirection("LEFT");
-    if (event.key === "ArrowRight" && direction !== "LEFT") setDirection("RIGHT");
+    if (event.key === "ArrowLeft" && direction !== "RIGHT")
+      setDirection("LEFT");
+    if (event.key === "ArrowRight" && direction !== "LEFT")
+      setDirection("RIGHT");
   };
 
   // Touch swipe controls
@@ -187,7 +189,7 @@ const Snakegrid = () => {
                 <div className="flex flex-col gap-3 mt-[10%] w-full">
                   <button
                     className="py-3 px-5 bg-gradient-to-r cursor-pointer text-xl font-bold text-white from-[#a66cff] to-[#3E3170] rounded-3xl"
-                     onClick={() => window.location.reload()}
+                    onClick={() => window.location.reload()}
                   >
                     PLAY AGAIN
                   </button>
@@ -209,7 +211,7 @@ const Snakegrid = () => {
                 </p>
                 <button
                   className="py-3 px-5 bg-gradient-to-r cursor-pointer text-xl font-bold text-white from-[#a66cff] to-[#3E3170] rounded-3xl mt-6"
-                onClick={() => window.location.reload()}
+                  onClick={() => window.location.reload()}
                 >
                   PLAY AGAIN
                 </button>
@@ -220,15 +222,16 @@ const Snakegrid = () => {
       )}
 
       {/* Mobile On-Screen Controls */}
+
       {!gameOver && (
-        <div className="fixed bottom-0 left-1/2 -translate-x-1/2  flex flex-col items-center gap-2 md:hidden">
+        <div className="fixed bottom-0 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 md:hidden">
           <button
             className="w-16 h-16 rounded-2xl bg-[#a66cff] text-white font-bold"
             onClick={() => direction !== "DOWN" && setDirection("UP")}
           >
             ↑
           </button>
-          <div className="flex gap-7">
+          <div className="flex gap-14">
             <button
               className="w-16 h-16 rounded-2xl bg-[#a66cff] text-white font-bold"
               onClick={() => direction !== "RIGHT" && setDirection("LEFT")}
