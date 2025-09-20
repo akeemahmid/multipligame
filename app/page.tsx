@@ -5,7 +5,7 @@ import { FaXTwitter } from "react-icons/fa6";
 export default function Home() {
   return (
     <div className="container flex-wrap mx-auto text-center flex flex-col">
-      <nav className=" w-full bg-[#090a0c] text-[#FFFFFFB2] border-1 border-[#3a2d52] rounded-4xl mt-7 py-4 px-4 md:px-8  ">
+      <nav className=" w-full bg-[#090a0c] text-[#FFFFFFB2] border-1 border-[#3a2d52] rounded-4xl mt-5 md:mt-7 py-3 md:py-4 px-4 md:px-8  ">
         <div className="flex items-center justify-between">
           <a href="https://multipli.fi/">
             <Image src={logo} alt="name" className="w-[90px] md:w-[150px]" />

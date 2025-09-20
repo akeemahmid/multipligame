@@ -136,7 +136,7 @@ const Snakegrid = () => {
 
   return (
     <section
-      className="container flex-wrap mx-auto flex justify-center h-auto w-full mt-[10%] relative"
+      className="container flex-wrap mx-auto flex justify-center h-auto w-full mt-[5%] md:mt-[10%] relative"
       onTouchStart={handleTouchStart}
       onTouchEnd={handleTouchEnd}
     >
@@ -221,29 +221,29 @@ const Snakegrid = () => {
 
       {/* Mobile On-Screen Controls */}
       {!gameOver && (
-        <div className="fixed bottom-5 left-1/2 -translate-x-1/2 mt-[5%] flex flex-col items-center gap-2 md:hidden">
+        <div className="fixed bottom-0 left-1/2 -translate-x-1/2  flex flex-col items-center gap-2 md:hidden">
           <button
-            className="w-16 h-16 rounded-full bg-[#a66cff] text-white font-bold"
+            className="w-15 h-15 rounded-full bg-[#a66cff] text-white font-bold"
             onClick={() => direction !== "DOWN" && setDirection("UP")}
           >
             ↑
           </button>
           <div className="flex gap-5">
             <button
-              className="w-16 h-16 rounded-full bg-[#a66cff] text-white font-bold"
+              className="w-15 h-15 rounded-full bg-[#a66cff] text-white font-bold"
               onClick={() => direction !== "RIGHT" && setDirection("LEFT")}
             >
               ←
             </button>
             <button
-              className="w-16 h-16 rounded-full bg-[#a66cff] text-white font-bold"
+              className="w-15 h-15 rounded-full bg-[#a66cff] text-white font-bold"
               onClick={() => direction !== "LEFT" && setDirection("RIGHT")}
             >
               →
             </button>
           </div>
           <button
-            className="w-16 h-16 rounded-full bg-[#a66cff] text-white font-bold"
+            className="w-15 h-15 rounded-full bg-[#a66cff] text-white font-bold"
             onClick={() => direction !== "UP" && setDirection("DOWN")}
           >
             ↓
