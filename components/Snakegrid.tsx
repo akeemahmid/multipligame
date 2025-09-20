@@ -223,27 +223,27 @@ const Snakegrid = () => {
       {!gameOver && (
         <div className="fixed bottom-0 left-1/2 -translate-x-1/2  flex flex-col items-center gap-2 md:hidden">
           <button
-            className="w-16 h-16 rounded-full bg-[#a66cff] text-white font-bold"
+            className="w-16 h-16 rounded-2xl bg-[#a66cff] text-white font-bold"
             onClick={() => direction !== "DOWN" && setDirection("UP")}
           >
             ↑
           </button>
-          <div className="flex gap-5">
+          <div className="flex gap-7">
             <button
-              className="w-16 h-16 rounded-full bg-[#a66cff] text-white font-bold"
+              className="w-16 h-16 rounded-2xl bg-[#a66cff] text-white font-bold"
               onClick={() => direction !== "RIGHT" && setDirection("LEFT")}
             >
               ←
             </button>
             <button
-              className="w-16 h-16 rounded-full bg-[#a66cff] text-white font-bold"
+              className="w-16 h-16 rounded-2xl bg-[#a66cff] text-white font-bold"
               onClick={() => direction !== "LEFT" && setDirection("RIGHT")}
             >
               →
             </button>
           </div>
           <button
-            className="w-16 h-16 rounded-full bg-[#a66cff] text-white font-bold"
+            className="w-16 h-16 rounded-2xl bg-[#a66cff] text-white font-bold"
             onClick={() => direction !== "UP" && setDirection("DOWN")}
           >
             ↓
